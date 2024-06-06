@@ -58,7 +58,7 @@ class 검색(commands.Cog):
                 f.write(json_data) #데이터 딕셔너리를 response.json 파일에 저장
 
             embed = discord.Embed(title=f"현재까지의 검색 결과", color=0x03C75A, timestamp=datetime.now())
-            embed.set_author(name="네이버 뉴스", icon_url="https://github.com/DDockson/navernews/blob/main/btnG_%EC%95%84%EC%9D%B4%EC%BD%98%EC%9B%90%ED%98%95.png?raw=true")
+            embed.set_author(name="네이버 뉴스", icon_url="https://media.discordapp.net/attachments/757793115204616287/1248347487195107339/btnG_.png")
             for i in data.keys():
                 embed.add_field(name=f"{data[i]['title']}", value=f"{data[i]['description']}\n[기사 보러가기]({data[i]['link']})", inline=False)
 
